@@ -59,10 +59,11 @@ class _DailyCState extends State<DailyC> {
             ),
             Consumer<LetterDisplay>(builder: (context, LetterDisplay, child) {
               return Container(
-                height: 400,
-                width: 300,
+                height: 324,
+                width: 270,
                 child: Container(
-                  // padding: const EdgeInsets.all(15),
+                  //padding: const EdgeInsets.all(30),
+                  //color: Colors.blue,
                   child: GridView.count(
                       // childAspectRatio: 1,
                       physics: const NeverScrollableScrollPhysics(),
@@ -645,7 +646,10 @@ class LeaderB extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    padding: const EdgeInsets.fromLTRB(20, 15, 20, 10),
+                    //padding: const EdgeInsets.fromLTRB(20, 15, 20, 10),
+                    alignment: AlignmentDirectional.center,
+                    height: 50,
+                    width: 250,
                     color: const Color.fromRGBO(255, 183, 77, 1),
                     child: const Text(
                       'Coming Soon!',
@@ -656,7 +660,9 @@ class LeaderB extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(8, 15, 8, 10),
+                    //padding: const EdgeInsets.fromLTRB(8, 15, 8, 10),
+                    height: 250,
+                    width: 250,
                     color: Colors.white,
                     child: const Icon(Icons.construction_rounded,
                         color: Colors.black, size: 211),

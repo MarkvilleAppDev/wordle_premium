@@ -72,7 +72,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     LetterDisplay.loadAnsDict(); //load up valid word guesses
     Widget titleSection = Container(
-      padding: const EdgeInsets.all(32),
+      padding: const EdgeInsets.fromLTRB(30, 45, 30, 0),
       child: Row(
         children: [
           Expanded(
@@ -82,7 +82,7 @@ class MyHomePage extends StatelessWidget {
               children: [
                 /*2*/
                 Container(
-                  padding: const EdgeInsets.only(bottom: 8),
+                  //padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.center,
                   child: const Text(
                     'Wordle Plus',
@@ -92,12 +92,12 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(
-                  '',
-                  style: TextStyle(
-                    color: Colors.grey[500],
-                  ),
-                ),
+                // Text(
+                //   'Daily Word',
+                //   style: TextStyle(
+                //     color: Colors.grey[500],
+                //   ),
+                // ),
               ],
             ),
           ),
@@ -163,9 +163,9 @@ class MyHomePage extends StatelessWidget {
                       int index = random.nextInt(5616);
 
                       word = wordList[index];
-                      // print(index);
-                      // print(word);
-                      // print('new game');
+                      print(index);
+                      print(word);
+                      print('new game');
                       LetterDisplay.answer = word.toUpperCase();
                       LetterDisplay.ansChars = {
                         LetterDisplay.answer[0],
@@ -232,9 +232,10 @@ class MyHomePage extends StatelessWidget {
           titleSection,
           Container(
             padding: const EdgeInsets.all(15),
-            margin: const EdgeInsets.all(15),
+            margin: const EdgeInsets.all(30),
+            //color: Colors.amber,
             child: Image.asset(
-              'assets/images/horse-silhouette.png',
+              'assets/images/Home.png',
               width: 600,
               height: 250,
               fit: BoxFit.contain,
