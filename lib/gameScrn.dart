@@ -790,6 +790,21 @@ class Instr extends StatelessWidget {
                     child: const Text(
                         'The letter U is not in the word in any spot.'),
                   ),
+                  Container(
+                    margin: const EdgeInsets.all(15),
+                    child: Image.asset(
+                      'assets/images/ADC.png',
+                      width: 250,
+                      height: 250,
+                      //fit: BoxFit.contain,
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                    color: Colors.white,
+                    child: const Text(
+                        'Special thanks to the Markville App Development Club'),
+                  ),
                 ],
               )),
         ],
