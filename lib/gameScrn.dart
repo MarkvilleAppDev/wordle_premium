@@ -17,114 +17,6 @@ class _DailyCState extends State<DailyC> {
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context)!.settings.arguments as ScreenArguments;
-    List<Widget> buttonArr = [
-      LetterButton(
-        letter: 'Q',
-        buttonColor: KeyboardDisplay._buttonCol[0],
-      ),
-      LetterButton(
-        letter: 'W',
-        buttonColor: KeyboardDisplay._buttonCol[1],
-      ),
-      LetterButton(
-        letter: 'E',
-        buttonColor: KeyboardDisplay._buttonCol[2],
-      ),
-      LetterButton(
-        letter: 'R',
-        buttonColor: KeyboardDisplay._buttonCol[3],
-      ),
-      LetterButton(
-        letter: 'T',
-        buttonColor: KeyboardDisplay._buttonCol[4],
-      ),
-      LetterButton(
-        letter: 'Y',
-        buttonColor: KeyboardDisplay._buttonCol[5],
-      ),
-      LetterButton(
-        letter: 'U',
-        buttonColor: KeyboardDisplay._buttonCol[6],
-      ),
-      LetterButton(
-        letter: 'I',
-        buttonColor: KeyboardDisplay._buttonCol[7],
-      ),
-      LetterButton(
-        letter: 'O',
-        buttonColor: KeyboardDisplay._buttonCol[8],
-      ),
-      LetterButton(
-        letter: 'P',
-        buttonColor: KeyboardDisplay._buttonCol[9],
-      ),
-      LetterButton(
-        letter: 'A',
-        buttonColor: KeyboardDisplay._buttonCol[10],
-      ),
-      LetterButton(
-        letter: 'S',
-        buttonColor: KeyboardDisplay._buttonCol[11],
-      ),
-      LetterButton(
-        letter: 'D',
-        buttonColor: KeyboardDisplay._buttonCol[12],
-      ),
-      LetterButton(
-        letter: 'F',
-        buttonColor: KeyboardDisplay._buttonCol[13],
-      ),
-      LetterButton(
-        letter: 'G',
-        buttonColor: KeyboardDisplay._buttonCol[14],
-      ),
-      LetterButton(
-        letter: 'H',
-        buttonColor: KeyboardDisplay._buttonCol[15],
-      ),
-      LetterButton(
-        letter: 'J',
-        buttonColor: KeyboardDisplay._buttonCol[16],
-      ),
-      LetterButton(
-        letter: 'K',
-        buttonColor: KeyboardDisplay._buttonCol[17],
-      ),
-      LetterButton(
-        letter: 'L',
-        buttonColor: KeyboardDisplay._buttonCol[18],
-      ),
-      EntButton(),
-      LetterButton(
-        letter: 'Z',
-        buttonColor: KeyboardDisplay._buttonCol[20],
-      ),
-      LetterButton(
-        letter: 'X',
-        buttonColor: KeyboardDisplay._buttonCol[21],
-      ),
-      LetterButton(
-        letter: 'C',
-        buttonColor: KeyboardDisplay._buttonCol[22],
-      ),
-      LetterButton(
-        letter: 'V',
-        buttonColor: KeyboardDisplay._buttonCol[23],
-      ),
-      LetterButton(
-        letter: 'B',
-        buttonColor: KeyboardDisplay._buttonCol[24],
-      ),
-      LetterButton(
-        letter: 'N',
-        buttonColor: KeyboardDisplay._buttonCol[25],
-      ),
-      LetterButton(
-        letter: 'M',
-        buttonColor: KeyboardDisplay._buttonCol[26],
-      ),
-      DelButton()
-    ];
 
     return Scaffold(
       appBar: AppBar(
@@ -450,8 +342,8 @@ class LetterDisplay extends ChangeNotifier {
         checkGuess += _charGrid[index];
       }
       int find = binarySearch(validList, checkGuess.toLowerCase());
-      print(find);
-      print(checkGuess);
+      // print(find);
+      // print(checkGuess);
 
       if (find == -1) {
         validWord = false;
@@ -764,7 +656,7 @@ class LeaderB extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.fromLTRB(20, 15, 20, 10),
+                    padding: const EdgeInsets.fromLTRB(8, 15, 8, 10),
                     color: Colors.white,
                     child: const Icon(Icons.construction_rounded,
                         color: Colors.black, size: 211),

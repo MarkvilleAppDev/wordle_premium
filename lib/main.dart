@@ -83,6 +83,7 @@ class MyHomePage extends StatelessWidget {
                 /*2*/
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
+                  alignment: Alignment.center,
                   child: const Text(
                     'Wordle Plus',
                     style: TextStyle(
@@ -162,9 +163,9 @@ class MyHomePage extends StatelessWidget {
                       int index = random.nextInt(5616);
 
                       word = wordList[index];
-                      print(index);
-                      print(word);
-                      print('new game');
+                      // print(index);
+                      // print(word);
+                      // print('new game');
                       LetterDisplay.answer = word.toUpperCase();
                       LetterDisplay.ansChars = {
                         LetterDisplay.answer[0],
